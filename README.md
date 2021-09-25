@@ -1,6 +1,6 @@
-# Docker: Nginx, PHP and PostgreSQL
+# Docker: Nginx, PHP and MySQL
 
-Services container infrastructure integrated by NGINX, PostgreSQL and PHP, designed to implement applications made with Laravel under a microservices structure. In consequence, the frontend enviroment must be deploy from other service container.
+Services container infrastructure integrated by NGINX, MySQL and PHP, designed to implement applications made with Laravel under a microservices structure. In consequence, the frontend enviroment must be deploy from other service container.
 
 ## Description
  
@@ -8,7 +8,7 @@ This project is a simple container services infrastructure designed to deploy ap
 
 - NGINX 
 - PHP
-- PostgreSQL
+- MySQL
 
 As a developer looking to improve my skils and abilities in the domain of the Laravel framework, I share this container structure in interest of making it easier to deploy both development and production environments. 
 
