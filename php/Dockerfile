@@ -24,9 +24,9 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install extensions
-RUN docker-php-ext-install mbstring zip exif pcntl
+RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
+RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
 RUN docker-php-ext-install gd
-RUN docker-php-ext-install pdo pgsql  pdo_pgsql pgsql
 
 # This image ships with the default php.ini-development and php.ini-production configuration files.
 # It is strongly recommended to use the production config for images used in production environments!
